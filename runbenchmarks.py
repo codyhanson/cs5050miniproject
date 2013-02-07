@@ -31,6 +31,12 @@ returncode = os.system("./benchmarks/stream/stream > results/{0}-stream.txt".for
 print "Return code for stream:{0}".format(returncode)
 
 #run iperf
+#connect as a client to another machine running the server.
+#iperf options TBD. is default ok?
+#server TBD
+iperfServer = "127.0.0.1"
+returncode = os.system("iperf -c {1} > results/{0}-iperf.txt".format(timestamp.strftime(timestampFormatStr), iperfServer))
+print "Return code for iperf client:{0}".format(returncode)
 
 #run SPECCPU2006
 
