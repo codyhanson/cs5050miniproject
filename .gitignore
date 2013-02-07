@@ -36,3 +36,8 @@ nosetests.xml
 
 #vim .swp files
 *.swp
+
+
+
+#ignore datafiles in the results directory
+results/*.txt

@@ -12,15 +12,16 @@ import os
 #get the current timestamp, which will identify this benchmark run
 #same as datetime.now(none)
 timestamp = datetime.datetime.today() #unsure if need to worry about timezones or not
+timestampFormatStr = "%m-%d-%y-%H_%M" #not sure if this is the format we want.
 
 
-
-#os.execv or os.execl can be used to invoke executeables with arguments
-#still figuring out how to redirect their output to a file
 
 
 #Check /proc/cpuinfo and record the output
-os.execv('/bin/cat',['/bin/cat','/proc/cpuinfo'])
+returncode = os.system("cat /proc/cpuinfo > results/{0}-cpuinfo.txt".format(timestamp.strftime(timestampFormatStr)))
+
+#check returncode to make sure it worked ok?
+print returncode 
 
 #run IOZONE
 

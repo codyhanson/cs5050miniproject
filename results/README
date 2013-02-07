@@ -1,0 +1,2 @@
+This directory will hold results in flat files, prefixed with the timestamp of the test run.
+Filenames will be postfixed with the type of benchmark output they contain.
