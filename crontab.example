@@ -1,0 +1,8 @@
+#an example for how we might want to setup our crontab on our VM to
+#schedule benchmark runs.
+
+# m h  dom mon dow   command
+
+#run the benchmark at the top of the hour, at 6am, noon, 6pm and midnight
+#every day of the week, every day of the month, every month
+ 0 6,12,18,23 * *  * python /path/to/script/runbenchmarks.py
