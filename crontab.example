@@ -3,6 +3,6 @@
 
 # m h  dom mon dow   command
 
-#run the benchmark at the top of the hour, at 6am, noon, 6pm and midnight
+#run the benchmark every 3 hours 
 #every day of the week, every day of the month, every month
- 0 6,12,18,23 * *  * python /path/to/script/runbenchmarks.py
+ 0 0,3,6,9,12,15,18,21 * *  * python /path/to/script/runbenchmarks.py
