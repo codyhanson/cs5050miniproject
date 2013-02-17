@@ -22,7 +22,7 @@ print "Return code for cat /proc/cpuinfo:{0}".format(returncode)
 
 #run IOZONE
 #Still need to figure out the options for iozone, they seem kind of complex
-returncode = os.system("./benchmarks/iozone3_414/src/current/iozone > results/iozone/{0}-iozone.txt".format(timestamp.strftime(timestampFormatStr)))
+returncode = os.system("./benchmarks/iozone3_414/src/current/iozone -a > results/iozone/{0}-iozone.txt".format(timestamp.strftime(timestampFormatStr)))
 print "Return code for iozone:{0}".format(returncode)
 
 #run STREAM
