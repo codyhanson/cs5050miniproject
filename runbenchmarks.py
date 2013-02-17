@@ -88,7 +88,7 @@ if (error):
     smtpserver.login(FROM, pw)
     header = 'To:' + TO + '\n' + 'From: ' + FROM + '\n' + 'Subject:AWS bench error\n'
     msg = header + '\n'
-    for key in returncodes:
+    for key in retcodes:
        msg = msg + "Test:{0}, retcode{1}\n".format(key,retcodes[key]) 
     smtpserver.sendmail(FROM, TO, msg)
     smtpserver.close()
