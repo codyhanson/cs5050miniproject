@@ -9,6 +9,8 @@ import datetime
 import smtplib
 import os
 
+os.chdir('/home/ubuntu/cs5050miniproject')
+
 #get the current timestamp, which will identify this benchmark run
 #we will periodically refresh the timestamp for in between long running tests
 #same as datetime.now(none)
@@ -70,7 +72,7 @@ if (returncode != 0):
     error = True
 retcodes["iozone"] = returncode
 
-
+error = True #always send email for now
 if (error):
     #send email in case of an error
     FROM = 'uccsawsbench@gmail.com'
