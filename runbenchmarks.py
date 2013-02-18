@@ -72,7 +72,6 @@ if (returncode != 0):
     error = True
 retcodes["iozone"] = returncode
 
-error = True #always send email for now
 if (error):
     #send email in case of an error
     FROM = 'uccsawsbench@gmail.com'
