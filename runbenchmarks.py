@@ -15,7 +15,7 @@ os.chdir('/home/ubuntu/cs5050miniproject')
 #we will periodically refresh the timestamp for in between long running tests
 #same as datetime.now(none)
 timestamp = datetime.datetime.today() #unsure if need to worry about timezones or not
-timestampFormatStr = "%m-%d-%y-%H_%M" #not sure if this is the format we want.
+timestampFormatStr = "%m-%d-%y-%H-%M" #not sure if this is the format we want.
 
 #set to indicate something went wrong, and fire off an email
 error = False
