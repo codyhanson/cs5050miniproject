@@ -37,6 +37,10 @@ nosetests.xml
 #vim .swp files
 *.swp
 
+#intellij
+*.iml
+.idea
+
 
 
 #ignore datafiles in the results directory
