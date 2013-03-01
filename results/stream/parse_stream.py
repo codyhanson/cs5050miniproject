@@ -2,15 +2,14 @@
 
 #extract memory bandwidth and latency from Stream benchmarks
 
-#import dateutil.parser
+import dateutil.parser
 from glob import glob
 import re
 
 values = {}
-
 pattern = re.compile('Copy:\s+([\d\.]+)\s+([\d\.]+)')
 
-for file in glob('*.txt'):
+for file in glob('*-stream.txt'):
     latency = 0
     bwidth = 0
     parts = file.split('-')
