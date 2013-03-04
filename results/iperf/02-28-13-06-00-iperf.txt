@@ -1,0 +1,7 @@
+------------------------------------------------------------
+Client connecting to ec2-54-234-43-118.compute-1.amazonaws.com, TCP port 5001
+TCP window size: 23.5 KByte (default)
+------------------------------------------------------------
+[  3] local 10.202.190.19 port 42185 connected with 10.245.26.50 port 5001
+[ ID] Interval       Transfer     Bandwidth
+[  3]  0.0-14.9 sec  9.25 MBytes  5.20 Mbits/sec
